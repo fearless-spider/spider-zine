@@ -31,7 +31,7 @@ run-hello-java :
 
 run-hello-asm :
 	nasm -f macho64 hello_world.asm
-	gcc hello_world.o
+	gcc -o hello_world hello_world.o
 	./hello_world
 
 run-hello-cob :
